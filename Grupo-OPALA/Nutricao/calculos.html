@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Animação por Scroll</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="_css/style_calc.css">
+	<script src="_js/app1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<!--Quilos-->
+	<section class="anime">
+		<div class="grid-text">
+			<form id="formulario" name="teste">     
+					<legend><h1>Cálculo do IMC</h1></legend>
+  
+					<label for="kilos">Quilos:</label><br>
+					<input type="text" name="quilos" class="form-control" />   <br>   
+  
+					<label for="metros">Metros:</label><br>
+					<input type="text" name="metros"class="form-control"/><br>
+  
+					<input type="button" onclick="calcularIMC(quilos.value,metros.value)" value="Calcular">
+  
+  
+					<h1 id="message"></h1>
+					<p id="message1"></p>
+			</form>
+		</div>
+		<div class="grid-img">
+
+		</div>
+	</section>
+	<!--Fim Quilos-->
+
+	<!--Agua-->
+	<section class="anime">
+		<div class="grid-text">
+			<form id="formulario"> 
+ 
+				<legend><h1>Cálculo de Agua</h1></legend>
+	  
+				<label for="kilos">Quilos:</label><br>
+				<h1 id="messagem"></h1>
+				<p id="messagem1"></p>
+				<input type="text" name="quilos" class="form-control"/>   <br>
+				
+				
+				<input type="button" onclick="calcularAgua(quilos.value)" value="Calcular">	
+			</form>
+		</div>
+		<div class="grid-img">
+
+		</div>
+	</section><br><br>
+	<!--Fim Agua-->
+
+	<!--Calorias-->
+	<section class="anime">
+		<div class="grid-text">
+			<form id="formulario">
+			   
+				<legend><h1>Cálculo de Calorias Diarias</h1></legend>
+			
+				<label for="kilos">Quilos:</label><br>
+				<input type="text" name="quilos" class="form-control"/>   <br>
+		  
+				<label for="metros">Metros:</label><br>
+				<input type="text" name="metros" class="form-control"/><br>
+		  
+				<label for="metros">Idade:</label><br>
+				<input type="text" name="idade" class="form-control"/><br>
+		  
+				<input type="radio" name="rd" value="M">Masculino<br>
+				<input type="radio" name="rd" value="F">Feminino<br>
+				<br>
+				<input type="button" onclick="radioFinal(rd.value,quilos.value,metros.value,idade.value)" value="Calcular">
+		  
+				<h1 id="messagemm"></h1>
+				<p id="messagemm1"></p>
+		  
+			</form>
+		</div>
+		<div class="grid-img">
+
+		</div>
+	</section>
+	<!--Fim Calorias-->
+
+	<script type="text/javascript" src="_js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="_js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Grupo OPALA</title>
+    <style>
+      div#footer {
+        border-top: 2px solid rgb(112, 108, 108);
+        width: 100%;
+        padding: 10px;
+        background-color: rgb(32, 32, 48);
+        color: #ffffff;
+      }
+      a#logo{
+        margin-right: 60%;
+        margin-left: 5%;
+      }
+      div#cadastro {
+          margin: 7% 15%;
+      }
+      h5#titulo {
+          background-color: cornflowerblue;
+          color: cornsilk;
+      }
+      label{
+          margin-bottom: 0;
+      }
+    </style>
+</head>
+<body>
+    <!-- Menu -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" id="logo" href="index.html">OPALA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="endereco.html">Localização<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Fim do Menu -->
+
+    <!-- Material para contato -->
+    <div id="cadastro" class="card">
+        <h5 id="titulo" class="card-header info-color white-text text-center py-4">
+            <strong>Fale Conosco</strong>
+        </h5>
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0">
+            <!-- Form -->
+            <form method="POST" class="text-center" style="color: #757575;" action="mailto:samuelchdias@gmail.com">
+            <!-- Nome -->
+                <div class="md-form mt-3">
+                    <label for="materialContactFormName">Nome completo</label>
+                    <input type="text" id="materialContactFormName" class="form-control">
+                    
+                </div>
+            <br>
+            <!-- E-mail -->
+                <div class="md-form">
+                    <label for="materialContactFormEmail">E-mail</label>
+                    <input type="email" id="materialContactFormEmail" class="form-control">
+                    
+                </div>
+                <br>
+            <!-- Assunto -->
+                <span>Assunto</span>
+                <select class="mdb-select">
+                    <option value="" disabled>Escolha a Opção </option>
+                    <option value="1" selected>Feedback</option>
+                    <option value="2">Reportar um bug</option>
+                    <option value="3">consultoria</option>
+                    <option value="4">Outro</option>
+                </select>
+            <br>
+            <!--Message-->
+            <br>
+                <div class="md-form">
+                    <label for="materialContactFormMessage">Mensagem</label>
+                    <textarea id="materialContactFormMessage" class="form-control md-textarea" rows="3"></textarea>
+                    
+                </div>
+            <!-- Send button -->
+                <button class="btn btn-outline-info btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">Send</button>
+        </form>
+    </div>
+
+    </div>
+<!-- Material form contact -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p> &copy; 2019 Grupo OPALA </p>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    </div>
+    <!-- Fim do Footer -->
+</body>
+</html>

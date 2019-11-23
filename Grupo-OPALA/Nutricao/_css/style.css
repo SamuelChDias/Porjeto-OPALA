@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+    background: linear-gradient(to top, rgb(32, 32, 48),#094491,#045bcc,#34b1eb);
+}
+
+div.artigo {
+    margin: 2% 5% 2% 5%;
+    border: 5px outset linear-gradient(to left, rgb(32, 32, 55),rgb(32, 32, 60)); ;
+    padding: 7px;
+    background: linear-gradient(to top, rgb(32, 32, 48),#094491,#045bcc,#34b1eb);    
+}
+
+.centro {
+    text-align: center;
+}
+
+h1 {
+    font-size: 28pt;
+    text-align: center;
+}
+
+p {
+    font-size: 15pt;
+    text-align: left;
+}
+
+small {
+    color: #c9bfa5;
+}
+
+div#carouselExampleFade {
+    width: 100%;
+    border: 3px inset;
+}
+div#carouselExampleFade img {
+    height: 350px;
+}
+
+div#footer {
+    width: 100%;
+    padding: 10px;
+    background:linear-gradient(to top, rgb(32, 32, 55),rgb(32, 32, 60));/**/
+    color: #ffffff;
+}
+
+form#formularioCpf {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+input#defaultRegisterFormCpf {
+    width: 190%;
+    margin-right: 0%;
+}
+
+button#enviar {
+    width: 30%;
+    margin: 0%;
+    height: 50%;
+}
+
+col#colu {
+    margin:0%;
+}
